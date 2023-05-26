@@ -1,0 +1,6 @@
+[submodule "source/kubernetes"]
+	path = source/kubernetes
+	url = git@github.com:letk8s/kubernetes.git
+[submodule "source/client-go"]
+	path = source/client-go
+	url = git@github.com:letk8s/client-go.git
