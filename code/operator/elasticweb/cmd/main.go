@@ -92,6 +92,7 @@ func main() {
 	if err = (&controller.ElasticWebReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
+		Log:    ctrl.Log.WithName("elasticweb"),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", "ElasticWeb")
 		os.Exit(1)
