@@ -113,11 +113,13 @@ K8s GC 在删除一个对象时，任何 ownerReference 是该对象的对象都
 
     在文件`controllers/smartddi_controller.go`中，在`Reconcile`函数里添加逻辑
 
-    5. 生成相关资源文件
+    5. 生成并部署相关资源文件
     
-    > make manifests
+    > make install
 
-    5. 本地测试完之后使用 Kubebuilder 的 Makefile 构建镜像，部署我们的 CRDs 和 Controller 
+    6. make run 运行
+
+    7. 部署cr资源，查看日志
 
 
 # 创建自定义资源并应用到k8s
